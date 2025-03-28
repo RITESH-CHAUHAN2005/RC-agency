@@ -1,0 +1,128 @@
+/* contact.css */
+
+/* Clean White Background */
+body {
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Section Styling */
+.contact-section {
+    padding: 50px 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Section */
+.contact-section:hover {
+    background-color: #f9f9f9;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Custom Navbar Styling */
+.custom-navbar {
+    background-color: #343a40; /* Dark Grey Background */
+    padding: 1rem;
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 1.5rem;
+    color: #ffffff; /* White Color */
+}
+
+.custom-navbar .nav-link {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-right: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ffc107; /* Yellow Hover Effect */
+}
+
+/* Toggler Button Styling */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form .form-control {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.contact-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0,123,255,0.2);
+}
+
+/* Submit Button */
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Map Styling */
+.map-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Contact Info Styling */
+.contact-info h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Hover Effect for Contact Info */
+.contact-info h4:hover, .contact-info p:hover {
+    color: #007bff;
+    transition: color 0.3s;
+}

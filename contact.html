@@ -1,0 +1,92 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - RC Agency</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <a class="navbar-brand font-weight-bold" href="index.html">RC Agency</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- Contact Section -->
+<section class="contact-section">
+    <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">We'd love to hear from you! Fill out the form below or visit us at our location.</p>
+
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Your Name" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject" required />
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Map and Contact Details -->
+            <div class="col-md-6">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.648558230116!2d77.10975371108366!3d28.736648175506318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d013045aab491%3A0xb6a504893549c54f!2sBhagwan%20Parshuram%20Institute%20of%20Technology!5e1!3m2!1sen!2sin!4v1743196157254!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-info">
+                    <h4>Our Office</h4>
+                    <p>123 Marketing Street, New Delhi, India</p>
+                    <h4>Email</h4>
+                    <p>info@rcagency.com</p>
+                    <h4>Phone</h4>
+                    <p>+91 123 456 7890</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 RC Agency. All rights reserved.
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

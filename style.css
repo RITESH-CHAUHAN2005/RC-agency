@@ -1,0 +1,333 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(30, 60, 114, 0.7); /* Semi-transparent blue */
+    backdrop-filter: blur(10px); /* Blur effect */
+    z-index: 1000;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a8c0ff; /* Light blue on hover */
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Custom Navbar Styling */
+.custom-navbar {
+    background-color: #343a40; /* Dark Grey Background */
+    padding: 1rem;
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 1.5rem;
+    color: #ffffff; /* White Color */
+}
+
+.custom-navbar .nav-link {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-right: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ffc107; /* Yellow Hover Effect */
+}
+
+/* Toggler Button Styling */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100vh;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    z-index: 1;
+}
+
+.carousel-caption h1 {
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff6f61;
+    transform: scale(1.05);
+}
+
+/* Services Section */
+#services {
+    background-color: #f4f4f9;
+    padding-top: 100vh;
+}
+
+.service-card {
+    padding: 30px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.service-card h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Hover Effect */
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+}
+
+/* About Section */
+#about {
+    background-color: #f4f4f4;
+}
+
+
+/* Contact Section */
+#contact {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+/* Contact Form Container */
+.contact-form {
+    background: linear-gradient(135deg, #ffffff 0%, #f4f4f9 100%);
+    padding: 40px;
+    border-radius: 16px;
+    border: 2px solid #2a5298;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields */
+.contact-form .form-control {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: #2a5298;
+    outline: none;
+    box-shadow: 0 0 12px rgba(42, 82, 152, 0.3);
+}
+
+/* Button */
+.contact-form button {
+    background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    color: #fff;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    transform: translateY(-3px);
+}
+
+/* About Our Agency Section */
+.about-agency {
+    background-color: #ffffff;
+    padding: 4rem 0;
+    animation: fadeInUp 1s ease;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 2rem;
+}
+
+/* Info Box Styling */
+.info-box {
+    background-color: #fafafa;
+    padding: 1.5rem;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.info-box h4 {
+    color: #ff4d4d;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.info-box p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.info-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #ff4d4d;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e60000;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ff4d4d;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #e60000;
+}
+

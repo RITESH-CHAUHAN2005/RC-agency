@@ -1,0 +1,145 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f4f4f4, #eaeaea);
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    position: relative;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Custom Navbar Styling */
+.custom-navbar {
+    background-color: #343a40; /* Dark Grey Background */
+    padding: 1rem;
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 1.5rem;
+    color: #ffffff; /* White Color */
+}
+
+.custom-navbar .nav-link {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-right: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ffc107; /* Yellow Hover Effect */
+}
+
+/* Toggler Button Styling */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 1s ease-in-out;
+}
+
+.zoom-in {
+    animation: zoomIn 0.8s ease-in-out;
+}
+
+/* Hover Effects */
+.hover-effect {
+    transition: transform 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+}
+
+/* Value Cards */
+.value-card {
+    padding: 20px;
+    background: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.value-card:hover {
+    background-color: #f4f4f4;
+    border-color: #bbb;
+    transform: translateY(-5px);
+}
+
+/* Team Styling */
+.team-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.team-img:hover {
+    transform: scale(1.1);
+}
+
+.team-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.team-role {
+    font-size: 1rem;
+    color: #777;
+}
